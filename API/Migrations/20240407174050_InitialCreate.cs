@@ -60,6 +60,11 @@ namespace API.Migrations
                     table.PrimaryKey("PK_Projects", x => x.Id);
                 });
 
+            migrationBuilder.InsertData(
+                table: "Projects",
+                columns: new[] { "Id", "DateCreated", "Description", "GithubUrl", "ImageUrl", "Title" },
+                values: new object[] { 1, new DateTime(2024, 4, 7, 17, 40, 50, 240, DateTimeKind.Utc).AddTicks(5581), "A personal portfolio website to showcase my projects and blog posts.", "GitHub", "image_url_here", "Personal Portfolio Website" });
+
             migrationBuilder.CreateIndex(
                 name: "IX_BlogPosts_DatePublished",
                 table: "BlogPosts",

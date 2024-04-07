@@ -17,6 +17,8 @@ namespace API.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             // Project Model Configuration
             modelBuilder.Entity<Project>()
                 .HasKey(p => p.Id); // Primary Key
@@ -50,6 +52,24 @@ namespace API.Context
                 .Property(c => c.Email)
                 .IsRequired()
                 .HasMaxLength(255);
+
+
+
+            // Seed data for Projects
+            modelBuilder.Entity<Project>().HasData(
+                new Project
+                {
+                    Id = 1,
+                    Title = "Personal Portfolio Website",
+                    Description = "A personal portfolio website to showcase my projects and blog posts.",
+                    ImageUrl = "image_url_here",
+                    GithubUrl = "GitHub",
+                    DateCreated = DateTime.UtcNow
+                }
+            );
+
+
+
         }
     }
 

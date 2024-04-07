@@ -20,6 +20,14 @@ internal class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowSpecificOrigin", builder =>
+                builder.WithOrigins("http://localhost:3000") // React app's origin
+                       .AllowAnyHeader()
+                       .AllowAnyMethod());
+        });
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -30,6 +38,8 @@ internal class Program
         }
 
         app.UseHttpsRedirection();
+
+        app.UseCors("AllowSpecificOrigin"); 
 
         app.UseAuthorization();
 
