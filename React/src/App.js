@@ -1,26 +1,20 @@
-import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './layout/Header';
-import Footer from './layout/Footer';
-import HomePage from './layout/HomePage';
+import Header from './layout/CustomHeader';
+import HomePage from './components/HomePage';
 import ProjectList from './components/ProjectList';
-
+import About from './components/About';
+import Contact from './components/Contact';
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/projects" element={<ProjectList />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <div className="App">
+      <Header />
+      <HomePage />
+      <About />
+      <ProjectList />
+      <Contact />
+    </div>
   );
 }
 

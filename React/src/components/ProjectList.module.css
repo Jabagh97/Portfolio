@@ -1,0 +1,42 @@
+/* ProjectList.module.css */
+.projectsContainer {
+    text-align: center;
+    height: 100vh;
+    padding: 0 10%;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.projectCard {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+}
+
+.projectCard h3 {
+    margin-top: 0;
+}
+
+.projectCard a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+@media (max-width: 600px) {
+    .projectsGrid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,75 @@
+  .homeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    color: #fff;
+    height: 100vh;
+    padding: 0 10%;
+    background-color: #2b2d33; /* Or any other color you prefer */
+    position: relative;
+    overflow: hidden;
+    background-image :url('/public/bg.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.introSection {
+  text-align: left;
+}
+
+.hello {
+  color: #f75023; /* Or any other color you prefer for 'Hello' */
+  margin: 0;
+}
+
+.name {
+  font-size: 3rem; /* Adjust the size as needed */
+  margin: 0.5rem 0;
+}
+
+.title {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  margin-bottom: 2rem;
+}
+
+.socialLinks {
+  /* Style your social links here */
+}
+
+.profilePicture img {
+  width: 300px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes the image round */
+}
+
+.skillIcons {
+  position: absolute;
+  animation: floatIcons 10s ease-in-out infinite;
+}
+
+@keyframes floatIcons {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Style each skill icon separately for positioning */
+.reactIcon {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  font-size: 60px; /* Adjust icon size */
+  color: #61dafb; /* React icon color */
+}
+
+.javaIcon {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  font-size: 60px; /* Adjust icon size */
+  color: #f89820; /* Java icon color */
+}
+
+.cssIcon {
+  /* Add styles for CSS icon */
+}
