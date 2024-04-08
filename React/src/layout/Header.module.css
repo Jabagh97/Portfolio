@@ -1,0 +1,91 @@
+/* Header.module.css */
+.header {
+    background-color: #3f0ecc; /* Bright blue */
+    padding: 2rem; /* Increased padding */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center; /* Center the content */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between image and text */
+    margin-bottom: 2rem; /* Space above navigation */
+}
+
+.profileImage {
+    border-radius: 50%;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+}
+
+.profileName {
+    font-size: 2rem; /* Larger font size */
+    font-weight: bold;
+}
+
+.profilePosition {
+    font-size: 1.2rem; /* Slightly smaller font size */
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px; /* Increase spacing between navigation items */
+}
+
+.navItem {
+    transition: transform 0.3s ease;
+}
+
+.navItem:hover {
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navLink:hover, .navLink:focus {
+    background-color: rgba(255,255,255,0.2); /* Subtle background on hover/focus */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navList {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .brand {
+        margin-bottom: 1rem;
+    }
+}
