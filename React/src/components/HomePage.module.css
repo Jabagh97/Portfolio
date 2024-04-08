@@ -35,7 +35,8 @@
 }
 
 .socialLinks {
-  /* Style your social links here */
+  margin-bottom: 2rem;
+
 }
 
 .profilePicture img {
@@ -45,6 +46,9 @@
 
 .skillIcons {
   position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
   animation: floatIcons 10s ease-in-out infinite;
 }
 
@@ -53,23 +57,24 @@
   50% { transform: translateY(-20px); }
 }
 
-/* Style each skill icon separately for positioning */
-.reactIcon {
-  position: absolute;
-  top: 20%;
-  right: 10%;
-  font-size: 60px; /* Adjust icon size */
-  color: #61dafb; /* React icon color */
+/* Adjust the size of the icons */
+.cIcon, .javaIcon, .javascriptIcon {
+  width: 50px; /* Set to the actual size of your icons */
+  height: 50px;
+}
+
+/* Adjust the position of each icon */
+.cIcon {
+  top: 30%;
+  right: 12%;
 }
 
 .javaIcon {
-  position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   left: 15%;
-  font-size: 60px; /* Adjust icon size */
-  color: #f89820; /* Java icon color */
 }
 
-.cssIcon {
-  /* Add styles for CSS icon */
+.javascriptIcon {
+  bottom: 20%;
+  right: 15%;
 }
