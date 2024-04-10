@@ -1,6 +1,6 @@
 // src/components/ProjectList.js
 import React, { useState, useEffect } from 'react';
-import ProjectService from '../services/ProjectService';
+import ProjectService from '../../services/ProjectService';
 import styles from './ProjectList.module.css'; // Import the CSS module
 
 function ProjectList() {

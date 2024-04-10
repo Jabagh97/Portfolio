@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from './layout/CustomHeader';
-import HomePage from './components/HomePage';
-import ProjectList from './components/ProjectList';
-import About from './components/About';
-import Contact from './components/Contact';
+import HomePage from './components/HomePage/HomePage';
+import ProjectList from './components/Projects/ProjectList';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import './App.css';
 
 function App() {

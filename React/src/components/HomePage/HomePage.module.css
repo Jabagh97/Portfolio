@@ -25,12 +25,12 @@
 }
 
 .name {
-  font-size: 3rem; /* Adjust the size as needed */
+  font-size: 3rem; 
   margin: 0.5rem 0;
 }
 
 .title {
-  font-size: 1.5rem; /* Adjust the size as needed */
+  font-size: 1.5rem; 
   margin-bottom: 2rem;
 }
 
@@ -40,16 +40,17 @@
 }
 
 .profilePicture img {
-  width: 300px; /* Adjust the size as needed */
-  border-radius: 50%; /* Makes the image round */
+  width: 300px; 
+  border-radius: 50%; 
 }
 
-.skillIcons {
-  position: absolute;
+.skillIcons img {
+  position:relative;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   animation: floatIcons 10s ease-in-out infinite;
+  
 }
 
 @keyframes floatIcons {
@@ -57,24 +58,29 @@
   50% { transform: translateY(-20px); }
 }
 
-/* Adjust the size of the icons */
-.cIcon, .javaIcon, .javascriptIcon {
-  width: 50px; /* Set to the actual size of your icons */
-  height: 50px;
-}
+
 
 /* Adjust the position of each icon */
 .cIcon {
-  top: 30%;
-  right: 12%;
+  top: -350px;
+  left: -35%;
+  background: transparent;
+
 }
 
 .javaIcon {
   bottom: 20%;
-  left: 15%;
+  right: 150px;
 }
 
 .javascriptIcon {
-  bottom: 20%;
-  right: 15%;
+  bottom: 20px;
+  left: 100px;
+}
+.greenText {
+  color: #1cbe59; 
+}
+
+.blueText {
+  color: #8067f0; 
 }

@@ -1,0 +1,52 @@
+/* Timeline.module.css */
+.timeline {
+    padding: 0;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .entry {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #f75023;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    position: relative;
+    color: #fff;
+  }
+  
+  .entry:before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 15px;
+    height: 12px;
+    width: 12px;
+    background: #f75023;
+    border-radius: 50%;
+    border: 4px solid #2b2d33;
+  }
+  
+  .title {
+    font-weight: bold;
+    color: #f75023;
+  }
+  
+  .duration {
+    color: #fff;
+    font-style: italic;
+    margin: 5px 0;
+  }
+  
+  .company {
+    color: #fff;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .timeline {
+      padding: 0 15px;
+    }
+  }
+  

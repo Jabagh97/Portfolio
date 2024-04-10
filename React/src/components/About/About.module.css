@@ -1,0 +1,66 @@
+/* About.module.css */
+.aboutPage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+  background-color: #2b2d33;
+  padding: 50px;
+}
+
+.content {
+  z-index: 2; 
+  text-align: center;
+  max-width: 600px;
+}
+
+.textSection {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+.sectionTitle {
+  color: #f75023;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+
+
+.imageTopLeft {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 150px; /* Adjust size as necessary */
+  transition: all 0.3s ease;
+}
+
+.imageBottomRight {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  width: 150px; /* Adjust size as necessary */
+  transition: all 0.3s ease;
+}
+
+.imageTopRight {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  width: 150px; /* Adjust size as necessary */
+  transition: all 0.3s ease;
+}
+
+.imageBottomLeftt {
+  position: absolute;
+  bottom: 60%;
+  right: 15%;
+  width: 100px; /* Adjust size as necessary */
+  transition: all 0.3s ease;
+}
+
+
