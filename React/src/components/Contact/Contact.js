@@ -1,14 +1,22 @@
+// Import React and the CSS Module.
 import React from 'react';
 import styles from './Contact.module.css';
 
 const Contact = () => {
     return (
         <div id="contact" className={styles.contactContainer}>
-            <h2 className={styles.heading}>Get In Touch</h2>
+            <h2 className={styles.heading}>Let's Connect</h2>
             <p className={styles.paragraph}>
-                I'm currently open to new opportunities, my inbox is always open. Whether you have a question or just want to say hi, feel free to drop me a message!
+                Whether you're looking for collaboration or just want to have a chat, I'm all ears. Feel free to reach out, and let's start something great together!
             </p>
-            <a href="mailto:your.email@example.com" className={styles.contactLink}>your.email@example.com</a>
+            <a href="mailto:jabağ@example.com" className={styles.contactLink}>jabağ@example.com</a>
+
+            <div className={styles.imagesWrapper}>
+                <img src="/7.png" className={styles.imageBottomRight} alt="Bottom Right" />
+
+                <img src="/5.png" className={styles.imageBottomLeftt} alt="Decorative" />
+            </div>
+
         </div>
     );
 };

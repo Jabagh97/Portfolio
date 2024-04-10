@@ -1,42 +1,138 @@
 /* ProjectList.module.css */
-.projectsContainer {
+.projectsSection {
+    position: relative;
+
+    padding: 50px;
+    background-color: #2b2d33;
+    /* Dark background */
+    min-height: 100vh;
+    color: white;
+    /* White text for better contrast */
+}
+
+.sectionTitle {
+    color: #f75023;
+    /* Orange titles */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
     text-align: center;
-    height: 100vh;
-    padding: 0 10%;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filters button {
+    background: #f75023;
+    /* Orange background for buttons */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    color: white;
+    /* White text for buttons */
+}
+
+.filters button:hover,
+.filters button:focus {
+    background-color: #faa634;
+    /* Lighter orange for hover/focus */
+    color: white;
 }
 
 .projectsGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px 0;
 }
 
 .projectCard {
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    /* Slightly visible cards */
+    border: 1px solid #f75023;
+    /* Orange borders */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 20px;
-    transition: transform 0.2s;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
 }
 
 .projectCard:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 114, 86, 0.5);
+    /* Shadow with a hint of orange */
 }
 
-.projectCard h3 {
-    margin-top: 0;
+.projectImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #f75023;
+    /* Orange border at the bottom of images */
 }
 
-.projectCard a {
-    display: inline-block;
-    margin-top: 10px;
+.projectLinks {
+    padding: 15px;
+    background: #f75023;
+    /* Orange background for links section */
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectLinks a {
     text-decoration: none;
-    color: #007bff;
+    color: white;
+    /* White text for links */
+    transition: opacity 0.3s;
+}
+
+.projectLinks a:hover,
+.projectLinks a:focus {
+    opacity: 0.8;
 }
 
 @media (max-width: 600px) {
     .projectsGrid {
         grid-template-columns: 1fr;
     }
+}
+
+.imageTopLeft {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    max-width: 150px;
+    /* Adjust based on your image size */
+    /* More styles if needed */
+}
+
+.imageBottomRight {
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+    max-width: 150px;
+    /* Adjust based on your image size */
+    /* More styles if needed */
+}
+
+.imageTopRight {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    max-width: 150px;
+    /* Adjust based on your image size */
+    /* More styles if needed */
+}
+
+.imageBottomLeftt {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100px;
+    /* Adjust size as necessary */
+    transition: all 0.3s ease;
 }

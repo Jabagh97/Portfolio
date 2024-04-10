@@ -1,34 +1,72 @@
+/* Contact.module.css */
 .contactContainer {
-    padding: 20px;
-    background: #f5f5f5;
+    position: relative;
+    padding: 50px;
+    background-color: #2b2d33;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin: 20px 0;
+    color: white;
+    margin: 40px auto;
 }
 
 .heading {
-    color: #007bff;
-    margin-bottom: 20px;
+    color: #f75023;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
 }
 
 .paragraph {
-    color: #333;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.contactInfo {
+    display: inline-block;
+    background: transparent;
+    padding: 10px;
+    border: 2px solid #f75023;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.icon {
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: #f75023;
 }
 
 .contactLink {
-    display: inline-block;
-    background: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+    color: #f75023;
+    font-weight: bold;
+    font-size: 1.2rem;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.contactLink:hover {
-    background: #0056b3;
+.contactLink:hover,
+.contactLink:focus {
+    color: #ffffff;
+    /* Change color on hover/focus */
+}
+
+
+.imageBottomLeftt {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 230px;
+    /* Adjust size as necessary */
+    transition: all 0.3s ease;
+}
+
+.imageBottomRight {
+    position: absolute;
+    bottom: 80%;
+    right: 30%;
+    max-width: 150px;
+    /* Adjust based on your image size */
+    /* More styles if needed */
 }
