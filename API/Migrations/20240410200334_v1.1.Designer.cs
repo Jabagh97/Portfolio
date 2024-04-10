@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240407174050_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240410200334_v1.1")]
+    partial class v11
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -85,6 +85,10 @@ namespace API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("TEXT");
 
@@ -115,11 +119,52 @@ namespace API.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2024, 4, 7, 17, 40, 50, 240, DateTimeKind.Utc).AddTicks(5581),
-                            Description = "A personal portfolio website to showcase my projects and blog posts.",
-                            GithubUrl = "GitHub",
-                            ImageUrl = "image_url_here",
+                            Category = "fullstack",
+                            DateCreated = new DateTime(2024, 4, 10, 20, 3, 34, 163, DateTimeKind.Utc).AddTicks(4725),
+                            Description = "An advanced queue management system developed using the .Net Framework, designed to streamline customer service operations.",
+                            GithubUrl = "https://github.com/Jabagh97/QLite",
+                            ImageUrl = "/Qlite.jpg",
+                            Title = "QLite"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Category = "frontend",
+                            DateCreated = new DateTime(2024, 4, 10, 20, 3, 34, 163, DateTimeKind.Utc).AddTicks(4727),
+                            Description = "This portfolio website is a personal showcase of my work, highlighting my projects and professional capabilities.",
+                            GithubUrl = "https://github.com/Jabagh97/Portfolio",
+                            ImageUrl = "/port.png",
                             Title = "Personal Portfolio Website"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Category = "fullstack",
+                            DateCreated = new DateTime(2024, 4, 10, 20, 3, 34, 163, DateTimeKind.Utc).AddTicks(4729),
+                            Description = "A riveting multiplayer BattleShip game, deployed on Heroku for seamless online play.",
+                            GithubUrl = "https://github.com/Jabagh97/BattleShip",
+                            ImageUrl = "/port.png",
+                            Title = "BattleShip"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Category = "backend",
+                            DateCreated = new DateTime(2024, 4, 10, 20, 3, 34, 163, DateTimeKind.Utc).AddTicks(4730),
+                            Description = "A backend forum application utilizing Spring Boot, crafted as part of a university assignment.",
+                            GithubUrl = "https://github.com/Jabagh97/SpringBootFourm",
+                            ImageUrl = "/spring.png",
+                            Title = "SpringBoot Forum"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Category = "fullstack",
+                            DateCreated = new DateTime(2024, 4, 10, 20, 3, 34, 163, DateTimeKind.Utc).AddTicks(4732),
+                            Description = "An innovative Task Manager leveraging Jira's API to calculate the effort of selected tasks, built with Spring Boot and Vue.js.",
+                            GithubUrl = "https://github.com/Jabagh97/TaskManager",
+                            ImageUrl = "/vue.png",
+                            Title = "Task Manager"
                         });
                 });
 #pragma warning restore 612, 618

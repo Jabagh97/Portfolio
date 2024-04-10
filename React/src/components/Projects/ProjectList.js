@@ -40,7 +40,7 @@ const ProjectList = () => {
                     {filteredProjects.length > 0 ? (
                         filteredProjects.map(project => (
                             <div className={styles.projectCard} key={project.id}>
-                                {/* <img src={project.image} alt={project.title} className={styles.projectImage} /> */}
+                                <img src={project.imageUrl} alt={project.title} className={styles.projectImage} />
                                 <h3>{project.title}</h3>
                                 <p>{project.description}</p>
                                 <div className={styles.projectLinks}>
@@ -61,7 +61,7 @@ const ProjectList = () => {
                 {/* Images */}
                 <div className={styles.imagesWrapper}>
                     <img src="/docker.png" className={styles.imageTopLeft} alt="Top Left" data-aos="fade-right" />
-                    <img src="/spring.png" className={styles.imageBottomRight} alt="Bottom Right" data-aos="fade-left" />
+                    <img src="/sql.png" className={styles.imageBottomRight} alt="Bottom Right" data-aos="fade-left" />
                     <img src="/2.png" className={styles.imageTopRight} alt="Top Right" />
                     <img src="/6.png" className={styles.imageBottomLeftt} alt="Bottom Left" />
 

@@ -4,15 +4,13 @@
 
     padding: 50px;
     background-color: #2b2d33;
-    /* Dark background */
     min-height: 100vh;
     color: white;
-    /* White text for better contrast */
+
 }
 
 .sectionTitle {
     color: #f75023;
-    /* Orange titles */
     font-size: 2.5rem;
     margin-bottom: 30px;
     text-align: center;
@@ -27,7 +25,6 @@
 
 .filters button {
     background: #f75023;
-    /* Orange background for buttons */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -35,7 +32,6 @@
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
     color: white;
-    /* White text for buttons */
 }
 
 .filters button:hover,
@@ -49,36 +45,36 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
+
 }
 
 .projectCard {
     background: rgba(255, 255, 255, 0.1);
-    /* Slightly visible cards */
     border: 1px solid #f75023;
-    /* Orange borders */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     transition: box-shadow 0.3s;
+    background-color: #2b2d33;
+    z-index: 2;
 }
 
 .projectCard:hover {
     box-shadow: 0 6px 12px rgba(255, 114, 86, 0.5);
-    /* Shadow with a hint of orange */
 }
 
 .projectImage {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: 150px;
+    object-fit: contain;
+    display: block;
     border-bottom: 2px solid #f75023;
-    /* Orange border at the bottom of images */
 }
+
 
 .projectLinks {
     padding: 15px;
     background: #f75023;
-    /* Orange background for links section */
     display: flex;
     justify-content: space-around;
 }
@@ -86,7 +82,6 @@
 .projectLinks a {
     text-decoration: none;
     color: white;
-    /* White text for links */
     transition: opacity 0.3s;
 }
 
@@ -101,6 +96,11 @@
     }
 }
 
+.imagesWrapper {
+
+    z-index: 1;
+}
+
 .imageTopLeft {
     position: absolute;
     top: 10%;
@@ -112,7 +112,7 @@
 
 .imageBottomRight {
     position: absolute;
-    bottom: 30%;
+    bottom: 8%;
     right: 10%;
     max-width: 150px;
     /* Adjust based on your image size */
