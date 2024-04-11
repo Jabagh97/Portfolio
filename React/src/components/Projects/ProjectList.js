@@ -3,17 +3,52 @@ import React, { useState, useEffect } from 'react';
 import ProjectService from '../../services/ProjectService';
 import styles from './ProjectList.module.css'; // Make sure the path is correct
 
+const projects = [
+    {
+        id: 1,
+        title: "QLite",
+        description: "An advanced queue management system developed using the .Net Framework, designed to streamline customer service operations.",
+        imageUrl: "/QLite.png",
+        githubUrl: "https://github.com/Jabagh97/QLite",
+        category: "fullstack"
+    },
+    {
+        id: 2,
+        title: "Personal Portfolio Website",
+        description: "This portfolio website is a personal showcase of my work, highlighting my projects and professional capabilities.",
+        imageUrl: "/port.png",
+        githubUrl: "https://github.com/Jabagh97/Portfolio",
+        category: "frontend"
+    },
+    {
+        id: 3,
+        title: "BattleShip",
+        description: "A riveting multiplayer BattleShip game, deployed on Heroku for seamless online play, crafted as part of a university assignment.",
+        imageUrl: "/node.png",
+        githubUrl: "https://github.com/Jabagh97/BattleShip",
+        category: "fullstack"
+    },
+    {
+        id: 5,
+        title: "Task Manager",
+        description: "An innovative Task Manager leveraging Jira's API to calculate the effort of selected tasks, built with Spring Boot and Vue.js.",
+        imageUrl: "/vue.png",
+        githubUrl: "https://github.com/Jabagh97/TaskManager",
+        category: "fullstack"
+    }
+];
+
 const ProjectList = () => {
-    const [projects, setProjects] = useState([]);
+    // const [projects, setProjects] = useState([]);
     const [filter, setFilter] = useState('all');
 
-    useEffect(() => {
-        ProjectService.getProjects().then(response => {
-            setProjects(response.data);
-        }).catch(error => {
-            console.log('There was an error fetching the projects', error);
-        });
-    }, []);
+    // useEffect(() => {
+    //     ProjectService.getProjects().then(response => {
+    //         setProjects(response.data);
+    //     }).catch(error => {
+    //         console.log('There was an error fetching the projects', error);
+    //     });
+    // }, []);
 
     const handleFilterChange = (newFilter) => {
         setFilter(newFilter);

@@ -70,3 +70,15 @@
     /* Adjust based on your image size */
     /* More styles if needed */
 }
+
+@media (max-width: 768px) {
+
+    .imageBottomRight {
+        position: absolute;
+        bottom: 80%;
+        right: 10%;
+        max-width: 70px;
+        /* Adjust based on your image size */
+        /* More styles if needed */
+    }
+}

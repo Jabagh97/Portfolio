@@ -1,0 +1,63 @@
+/* Modal.module.css */
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s;
+}
+
+.modalContent {
+    background-color: #2b2d33;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.closeButton {
+    float: right;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.contentWrapper {
+    text-align: left;
+}
+
+.firstParagraph {
+    font-size: 1.2rem;
+    color: #e9d7d2;
+    /* Use your theme's accent color */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.otherParagraphs {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Example of adding icons or illustrations */
+.icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}

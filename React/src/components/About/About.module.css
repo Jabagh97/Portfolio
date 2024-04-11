@@ -11,7 +11,7 @@
 }
 
 .content {
-  z-index: 2; 
+  z-index: 2;
   text-align: center;
   max-width: 600px;
 }
@@ -35,7 +35,8 @@
   position: absolute;
   top: 10%;
   left: 10%;
-  width: 150px; /* Adjust size as necessary */
+  width: 150px;
+  /* Adjust size as necessary */
   transition: all 0.3s ease;
 }
 
@@ -43,7 +44,8 @@
   position: absolute;
   bottom: 20%;
   right: 10%;
-  width: 150px; /* Adjust size as necessary */
+  width: 150px;
+  /* Adjust size as necessary */
   transition: all 0.3s ease;
 }
 
@@ -51,7 +53,8 @@
   position: absolute;
   top: 50%;
   left: 15%;
-  width: 150px; /* Adjust size as necessary */
+  width: 150px;
+  /* Adjust size as necessary */
   transition: all 0.3s ease;
 }
 
@@ -59,8 +62,60 @@
   position: absolute;
   bottom: 60%;
   right: 15%;
-  width: 100px; /* Adjust size as necessary */
+  width: 100px;
+  /* Adjust size as necessary */
   transition: all 0.3s ease;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .aboutPage {
+    padding: 10px;
+    height: auto;
+  }
 
+  .content {
+    max-width: 50%;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .textSection {
+    padding: 1rem;
+  }
+
+  .imageTopLeft,
+  .imageBottomRight,
+  .imageTopRight,
+  .imageBottomLeftt {
+    width: 80px;
+    /* Make images smaller on smaller screens */
+    top: unset;
+    bottom: unset;
+    left: unset;
+    right: unset;
+  }
+
+  /* Specific adjustments for mobile positioning */
+  .imageTopLeft {
+    top: 5%;
+    left: 5%;
+  }
+
+  .imageBottomRight {
+    bottom: 5%;
+    right: 5%;
+  }
+
+  .imageTopRight {
+    top: 20%;
+    right: 5%;
+  }
+
+  .imageBottomLeftt {
+    bottom: 20%;
+    left: 5%;
+  }
+}

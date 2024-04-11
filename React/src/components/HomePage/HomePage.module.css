@@ -6,81 +6,147 @@
     color: #fff;
     height: 100vh;
     padding: 0 10%;
-    background-color: #2b2d33; /* Or any other color you prefer */
+    background-color: #2b2d33;
+    /* Or any other color you prefer */
     position: relative;
     overflow: hidden;
-    background-image :url('/public/bg.jpg');
-    background-repeat:no-repeat;
+    background-image: url('/public/bg.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50%;
-}
+  }
 
-.introSection {
-  text-align: left;
-}
+  .introSection {
+    text-align: left;
+  }
 
-.hello {
-  color: #f75023; /* Or any other color you prefer for 'Hello' */
-  margin: 0;
-}
+  .hello {
+    color: #f75023;
+    /* Or any other color you prefer for 'Hello' */
+    margin: 0;
+  }
 
-.name {
-  font-size: 3rem; 
-  margin: 0.5rem 0;
-}
+  .name {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+  }
 
-.title {
-  font-size: 1.5rem; 
-  margin-bottom: 2rem;
-}
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
 
-.socialLinks {
-  margin-bottom: 2rem;
+  .socialLinks {
+    margin-bottom: 2rem;
 
-}
+  }
 
-.profilePicture img {
-  width: 300px; 
-  border-radius: 50%; 
-}
+  .profilePicture img {
+    width: 300px;
+    border-radius: 50%;
+  }
 
-.skillIcons img {
-  position:relative;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: floatIcons 10s ease-in-out infinite;
-  
-}
+  .skillIcons img {
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: floatIcons 10s ease-in-out infinite;
 
-@keyframes floatIcons {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-}
+  }
+
+  @keyframes floatIcons {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
 
 
 
-/* Adjust the position of each icon */
-.cIcon {
-  top: -350px;
-  left: -35%;
-  background: transparent;
+  /* Adjust the position of each icon */
+  .cIcon {
+    top: -350px;
+    left: -35%;
+    background: transparent;
 
-}
+  }
 
-.javaIcon {
-  bottom: 20%;
-  right: 150px;
-}
+  .javaIcon {
+    bottom: 20%;
+    right: 150px;
+  }
 
-.javascriptIcon {
-  bottom: 20px;
-  left: 100px;
-}
-.greenText {
-  color: #1cbe59; 
-}
+  .javascriptIcon {
+    bottom: 20px;
+    left: 100px;
+  }
 
-.blueText {
-  color: #8067f0; 
-}
+  .greenText {
+    color: #1cbe59;
+  }
+
+  .blueText {
+    color: #8067f0;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+
+    .introSection,
+    .socialLinks {
+      text-align: center;
+    }
+
+    .profilePicture img {
+      width: 200px;
+      border-radius: 50%;
+    }
+
+    .name {
+      font-size: 2rem;
+    }
+
+    .title {
+      font-size: 1rem;
+    }
+
+    .skillIcons img {
+      position: relative;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: floatIcons 10s ease-in-out infinite;
+
+    }
+
+    .cIcon {
+      top: -300px;
+      left: -20%;
+      background: transparent;
+
+    }
+
+    .javascriptIcon {
+      bottom: 10px;
+      left: 50px;
+    }
+
+    .javaIcon {
+      bottom: 5px;
+      right: 100px;
+    }
+
+  }
+
+  .greenText {
+    color: #1cbe59;
+  }
+
+  .blueText {
+    color: #8067f0;
+  }

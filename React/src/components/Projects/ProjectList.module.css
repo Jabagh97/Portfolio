@@ -136,3 +136,63 @@
     /* Adjust size as necessary */
     transition: all 0.3s ease;
 }
+
+@media (max-width: 768px) {
+    .projectsGrid {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .filters {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .filters button {
+        padding: 5px 10px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .imageTopLeft {
+        position: absolute;
+        top: 4%;
+        left: 10%;
+        max-width: 100px;
+        /* Adjust based on your image size */
+        /* More styles if needed */
+    }
+
+    .imageBottomRight {
+        position: absolute;
+        bottom: 8%;
+        right: 0%;
+        max-width: 50px;
+        /* Adjust based on your image size */
+        /* More styles if needed */
+    }
+
+    .imageTopRight {
+        position: absolute;
+        top: 2%;
+        right: 1%;
+        max-width: 150px;
+        /* Adjust based on your image size */
+        /* More styles if needed */
+    }
+
+    .imageBottomLeftt {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        width: 100px;
+        /* Adjust size as necessary */
+        transition: all 0.3s ease;
+    }
+
+    .sectionTitle,
+    .projectCard a {
+        font-size: 1.5rem;
+        /* Adjust font size for readability */
+    }
+}
